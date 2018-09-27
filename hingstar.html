@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <title>Hingstar</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+</head>
+
+<body class="home-template">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper align-center">
+                <a class="text-logo" href="index.html">Hingstar</a>
+
+                <span class="mobile-menu-toggle" id="nav-toggle-button">
+                    <i class="fa fa-bars align-center"></i>
+                </span>
+            </div>
+        </div>
+        <nav class="site-navbar align-center" id="main-menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">TILLBAKA</a></li>
+                        <li><a href="#/">DRESSYR</a></li>
+                        <li><a href="#/">HOPPNING</a></li>
+                        <li><a href="#/">FÄLTTÄVLAN</a></li>
+                        <li><a href="#/">KÖRNING</a></li>
+                        <li><a href="#/">DISTANS</a></li>                         
+                    </ul>
+                    <input type="text" class="form-control input-lg" placeholder="Sök" />
+                </nav>
+            </div>
+        </nav>
+        <nav class="mobile-menu visible-sm visible-xs" id="mobile-menu"></nav>
+        <div class="backdrop hidden-md hidden-lg" id="backdrop">
+            <span class="menu-close align-center"><i class="fa fa-times"></i></span>
+        </div>
+    </header>
+
+    <div class="main-content-area">
+        <div class="container">
+            <div class="page-content-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="post-head align-center">
+
+                        </div>
+
+                        <div class="post-content-wrap m-auto col-md-9">
+
+                            <h4 id="h4heading">BALTIMORE 1178</h4>
+                            <p>Donec tempor arcu quis ex gravida pellentesque. Quisque eros augue, placerat non
+                                tincidunt id, posuere et mauris. Mauris porta sollicitudin feugiat.
+                                Donec tempor arcu quis ex gravida pellentesque. Quisque eros augue, placerat non
+                                tincidunt id, posuere et mauris. Mauris porta sollicitudin feugiat.
+                            </p>
+
+                            <div class="w3-content w3-display-container">
+                                <img class="mySlides" src="content/images/image9.jpg" style="width:100%">
+                                <img class="mySlides" src="content/images/image8.jpg" style="width:100%">
+                                <img class="mySlides" src="content/images/image7.jpg" style="width:100%">
+                                <img class="mySlides" src="content/images/image6.jpg" style="width:100%">
+
+                                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                            </div>
+
+                            <script>
+                                var slideIndex = 1;
+                                showDivs(slideIndex);
+
+                                function plusDivs(n) {
+                                    showDivs(slideIndex += n);
+                                }
+
+                                function showDivs(n) {
+                                    var i;
+                                    var x = document.getElementsByClassName("mySlides");
+                                    if (n > x.length) {
+                                        slideIndex = 1
+                                    }
+                                    if (n < 1) {
+                                        slideIndex = x.length
+                                    };
+                                    for (i = 0; i < x.length; i++) {
+                                        x[i].style.display = "none";
+                                    }
+                                    x[slideIndex - 1].style.display = "block";
+                                }
+                            </script>
+                            <br>
+                            <dl class="spec">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <dt>Name</dt><dd class="first">BALTIMORE 1178</dd>
+                                        <dt>Född</dt><dd>2009</dd>
+                                        <dt>Kön</dt><dd>Sto.</dd>
+                                        <dt>Ägare</dt><dd>Sofie Ahlstrand</dd>
+                                        <dt>Priser(fryst semin).</dt><dd>Språngavgift 2500kr + 5000kr vid 90 dygns dräktighet.</dd>
+                                    </div>
+                                    <div class="col-2">
+                                        <dt>Färg</dt><dd>Brun</dd>
+                                        <dt>Kategori </dt><dd>H</dd>
+                                        <dt>Födelseland </dt><dd>Denmark</dd>
+                                    </div>
+                                     <div class="col-3">
+                                        <dt>Ras</dt><dd>Danskt Varmblod</dd>
+                                        <dt>Stambok</dt><dd>Danish Warmblood Society</dd>
+                                        <dt>Far</dt><dd>Quinton DVH 977</dd>
+                                    </div>
+                                    <div class="col-3">
+                                        <dt>Mor</dt><dd>Capsy Queen</dd>
+                                        <dt>Morfar </dt><dd>Cape Town S. DVH 738</dd>
+                                        <dt>Uppfödare</dt><dd>Otto Gotthardsen</dd>
+                                        <dt>Statistik</dt><dd><a href="statistik.html">länk till BLUP</a></dd>
+                                    </div>                                    
+                                </div>
+                            </dl>
+
+                            <blockquote>
+                                <p>”Årets utmanarhingst” i hoppning 2014 lever upp till sin utmärkelse; avkommorna
+                                    visar gång på gång sin talang och levererar när det gäller.
+                                    <cite>--Winston Churchill</cite></p>
+                            </blockquote>
+
+                            <p>Baltimore fick hoppdiplom både vid treårstestet (10-9) och kvalitetsbedömningen (9-9).
+                                Han vann bruksprovet 2009 med totalt 9,4 och 10 för tekniken. Baltimore fick mycket
+                                fina omdömen; spänstig hingst med stor kapacitet, välbalanserad och hinderklok. Han var
+                                både som 5- och 6-åring i final i både Scandinavian Open och unghäst-VM. Baltimore kom
+                                till Malin Baryard Johnsson hösten 2011. Under säsongen 2012 var ekipaget i princip
+                                felfria upp till femstjärniga internationella tävlingar. Vid Ryttargalan samma år
+                                utnämndes Baltimore till ”Morgondagens häst”.
+
+                                Under år 2013 och 2014 har han tävlat upp till 160-klasser. Han har flertalet
+                                framstående placeringar i 150-klasser, nationellt och internationellt. Han tävlade år
+                                2013 tre gånger i Nations Cup varav en gång i Sopot där Sverige vann och Baltimore
+                                gjorde två felfria rundor. Det har nu visat sig att Baltimore aldrig riktigt hämtade
+                                sig efter de virus han ådrog sig hösten 2013 trots intensiva försök från de mest
+                                välrenommerade veterinärerna. Ett försök att finna en lösning via miljöombyte gjordes
+                                genom ryttarbytet till Rolf-Göran Bengtsson, men eftersom det inte gjorde någon större
+                                skillnad fick Baltimore i första hand ägna sig åt avel under 2016. Under hösten 2016
+                                började Alexander Zetterman rida och tävla Baltimore och ekipaget har gjort mycket fina
+                                resultat under 2017, upp till och med internationell 160-hoppning. Avkommorna har gått
+                                mycket bra på både fölvisningar och treårstest. Under 2016 visade avkommorna att de
+                                infriar förväntningarna från unga år genom mycket goda resultat i unghästtävlingar.
+                                Flera av Sveriges landslagsryttare har valt att både köpa avkommor samt seminera
+                                prestationsstarka ston med Baltimore. Baltimore har prestationsklass 4 i SWB.
+
+                            </p>
+                            <hr>
+
+                            <h5 id="embed-card-examples">Avkommor till Baltimore:</h5>
+                            <figure class="kg-card kg-embed-card"><iframe width="480" height="270" src="https://www.youtube.com/embed/eQKpaf5P228?feature=oembed"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </figure>
+
+                            <figure class="kg-card kg-embed-card"><iframe width="480" height="270" src="https://www.youtube.com/embed/d2xXLiBmYs8?feature=oembed"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.bundle.minb580.js?v=820c16edb5"></script>
+
+</body>
+
+</html>
