@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="form-body without-side">
-        
+      
         <div class="row">
             <div class="img-holder">
                 <div class="bg"></div>
@@ -23,21 +23,22 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3>Logga in</h3>
+                        <h3>Skapa nytt konto</h3>
                         <p>Tillgång till ditt Hingstar konto.</p>
-                        <form action="main.html">
-                            <input class="form-control" type="text" name="username" placeholder="E-post Address">
-                            <input class="form-control" type="password" name="password" placeholder="Lösenord">
+                        <form>
+                            <input class="form-control" type="text" name="name" placeholder="Fullständiga namn" required>
+                            <input class="form-control" type="email" name="email" placeholder="E-post Address" required>
+                            <input class="form-control" type="password" name="password" placeholder="Lösenord" required>
                             <div class="form-button">
-                                <button id="submit" type="submit" class="ibtn">Logga in</button> <a href="forget.html">Glöm lösenord?</a>
+                                <button id="submit" type="submit" class="ibtn">Registrera</button>
                             </div>
                         </form>
                         <div class="other-links">
-                            <div class="text">Eller logga in med</div>
+                            <div class="text">eller registrera med</div>
                             <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><a href="#"><i class="fab fa-google"></i>Google</a><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
                         </div>
                         <div class="page-links">
-                            <a href="register.html">Skapa nytt konto</a>
+                            <a href="index.html">Logga in till kontot</a>
                         </div>
                     </div>
                 </div>
@@ -49,6 +50,5 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
-
 
 </html>
