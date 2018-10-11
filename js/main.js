@@ -8,14 +8,14 @@
         e.preventDefault();
         e.stopPropagation();
         return false;
-       });
-       $(document).on('keydown', function(e) {
+    });
+    $(document).on('keydown', function (e) {
         if (
             (e.ctrlKey && (e.keyCode == 85)) ||
             (e.ctrlKey && (e.shiftKey && e.keyCode == 73)) ||
             (e.ctrlKey && (e.shiftKey && e.keyCode == 75)) ||
             (e.metaKey && (e.shiftKey && e.keyCode == 91))
-            ) {
+        ) {
             return false;
         } else {
             return true;
@@ -138,7 +138,9 @@
         });
     }
     if ($('.elv-zoom-single').length) {
-        $('.elv-zoom-single').magnificPopup({type: 'image'});
+        $('.elv-zoom-single').magnificPopup({
+            type: 'image'
+        });
     }
     if ($('.zoom-gallery').length) {
         $('.zoom-gallery').each(function () { // the containers for all your galleries
@@ -161,10 +163,14 @@
             _target = _parent.find('.menu-list'),
             _set = _target.find('.menu-item.hidden').slice(0, 4); // Herre 2 is the limit
         if (_set.length) {
-            _set.animate({opacity: 0});
+            _set.animate({
+                opacity: 0
+            });
             _set.promise().done(function () {
                 _set.removeClass('hidden');
-                _set.show().animate({opacity: 1}, 1000);
+                _set.show().animate({
+                    opacity: 1
+                }, 1000);
             });
         } else {
             _this.text('No more items to display');
@@ -174,8 +180,10 @@
     /*-------------------------------------
     // jQuery MeanMenu activation code
      --------------------------------------*/
-    $('nav#dropdown').meanmenu({siteLogo: "<div class='mobile-menu-nav-back'><a href='index.html' class='logo-mobile'><img src='img/logo.png' /></a></div>"});
-  
+    $('nav#dropdown').meanmenu({
+        siteLogo: "<div class='mobile-menu-nav-back'><a href='index.html' class='logo-mobile'><img src='img/logo.png' /></a></div>"
+    });
+
     /*-------------------------------------
     // jquery zoom activation code
     -------------------------------------*/
@@ -333,27 +341,39 @@
             var styles = [{
                 featureType: 'water',
                 elementType: 'geometry.fill',
-                stylers: [{color: '#b7d0ea'}]
+                stylers: [{
+                    color: '#b7d0ea'
+                }]
             }, {
                 featureType: 'road',
                 elementType: 'labels.text.fill',
-                stylers: [{visibility: 'off'}]
+                stylers: [{
+                    visibility: 'off'
+                }]
             }, {
                 featureType: 'road',
                 elementType: 'geometry.stroke',
-                stylers: [{visibility: 'off'}]
+                stylers: [{
+                    visibility: 'off'
+                }]
             }, {
                 featureType: 'road.highway',
                 elementType: 'geometry',
-                stylers: [{color: '#c2c2aa'}]
+                stylers: [{
+                    color: '#c2c2aa'
+                }]
             }, {
                 featureType: 'poi.park',
                 elementType: 'geometry',
-                stylers: [{color: '#b6d1b0'}]
+                stylers: [{
+                    color: '#b6d1b0'
+                }]
             }, {
                 featureType: 'poi.park',
                 elementType: 'labels.text.fill',
-                stylers: [{color: '#6b9a76'}]
+                stylers: [{
+                    color: '#6b9a76'
+                }]
             }];
             var options = {
                 mapTypeControlOptions: {
@@ -366,7 +386,9 @@
             };
             var div = document.getElementById('googleMap');
             var map = new google.maps.Map(div, options);
-            var styledMapType = new google.maps.StyledMapType(styles, {name: 'Styled'});
+            var styledMapType = new google.maps.StyledMapType(styles, {
+                name: 'Styled'
+            });
             map.mapTypes.set('Styled', styledMapType);
         };
     }
