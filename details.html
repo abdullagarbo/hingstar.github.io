@@ -62,6 +62,9 @@
 	<!-- Template round style CSS (just uncomment line below to enable round style) -->
 	<link rel="stylesheet" href="assets/css/round-style.css">
 
+	<!-- Template image slider CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -93,7 +96,7 @@
 			* Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
 			* Use class "ph-center" or "ph-right" to align page header caption.
 			-->
-		<section id="page-header" class="ph-xlg">
+		<section id="page-header" class="ph-sm">
 
 			<!-- Element cover 
 				===================
@@ -142,15 +145,8 @@
 					* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 					-->
 				<div class="page-header-caption ph-caption-xlg parallax-5 fade-out-scroll-5">
-					<h1 class="page-header-title">IRONMAN H 1351</h1>
+					<h1 class="">IRONMAN H 1351</h1>
 					<hr class="hr-short">
-
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="page-header-description" data-max-words="40">
-						<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros
-							sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas
-							massa elementum.</p>
-					</div>
 
 				</div>
 				<!-- End page header caption -->
@@ -195,8 +191,37 @@
 										<!-- Begin blog list item -->
 										<article class="blog-list-item">
 
-											<!-- Blog list item image -->
-											<a href="blog-single.html" class="bl-item-image"><img src="assets/img/intro/intro-14.jpg" alt="image"></a>
+											<!-- Blog list item image slider -->
+											<div class="w3-content w3-display-container">
+												<img class="mySlides" src="assets/img/hrs/hrs5.jpg" style="width:100%">
+												<img class="mySlides" src="assets/img/hrs/hrs2.jpg" style="width:100%">
+												<img class="mySlides" src="assets/img/hrs/hrs3.jpg" style="width:100%">
+												<img class="mySlides" src="assets/img/hrs/hrs4.jpg" style="width:100%">
+
+												<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+												<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+											</div>
+
+											<script>
+												var slideIndex = 1;
+												  showDivs(slideIndex);
+												  
+												  function plusDivs(n) {
+													showDivs(slideIndex += n);
+												  }
+												  
+												  function showDivs(n) {
+													var i;
+													var x = document.getElementsByClassName("mySlides");
+													if (n > x.length) {slideIndex = 1}    
+													if (n < 1) {slideIndex = x.length}
+													for (i = 0; i < x.length; i++) {
+													   x[i].style.display = "none";  
+													}
+													x[slideIndex-1].style.display = "block";  
+												  }
+											</script>
+											<!-- End Blog list item image slider -->
 
 											<!-- Begin blog list item info -->
 											<div class="bl-item-info">
@@ -229,7 +254,7 @@
 
 													<br>
 
-													<ul class="specification-layout1 mb-40">														
+													<ul class="specification-layout1 mb-40">
 														<li>Pris: Språngavgift 2500kr + moms</li>
 														<li>&emsp;&emsp; Dräktig (90dygn) 5000 SEK + moms</li>
 														<li>&emsp;&emsp; Frakt 750 SEK + moms</li>
@@ -238,47 +263,9 @@
 														<li>Födelseland: Denmark</li>
 														<li>Ras: Danskt Varmblod</li>
 														<li>Uppfödare : Otto Gotthardsen</li>
-														<li>Stambok: Danish Warmblood Society</li>														
+														<li>Stambok: Danish Warmblood Society</li>
 														<li>Statistik: <a href="#0">länk till BLUP</a></li>
 													</ul>
-
-
-													<div class="owl-carousel dots-right dots-rounded owl-loaded owl-drag" data-items="1" data-nav="true"
-													 data-loop="true">
-
-
-
-														<div class="owl-stage-outer">
-															<div class="owl-stage" style="transform: translate3d(-1594px, 0px, 0px); transition: all 0s ease 0s; width: 5580px;">
-																<div class="owl-item cloned" style="width: 797.067px;"><a href="assets/img/hrs/hrs1.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs1.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs1.jpg"></a></div>
-																<div class="owl-item cloned" style="width: 797.067px;"><a href="assets/img/hrs/hrs2.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs2.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs2.jpg"></a></div>
-																<div class="owl-item active" style="width: 797.067px;"><a href="assets/img/hrs/hrs3.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs3.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs3.jpg"></a></div>
-																<div class="owl-item" style="width: 797.067px;"><a href="assets/img/hrs/hrs4.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs4.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs4.jpg"></a></div>
-																<div class="owl-item" style="width: 797.067px;"><a href="assets/img/hrs/hrs5.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs5.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs5.jpg"></a></div>
-																<div class="owl-item cloned" style="width: 797.067px;"><a href="assets/img/hrs/hrs6.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs6.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs6.jpg"></a></div>
-																<div class="owl-item cloned" style="width: 797.067px;"><a href="assets/img/hrs/hrs7.jpg" class="cc-item bg-image lg-trigger"
-																	 style="background-image: url(assets/img/hrs/hrs7.jpg); background-position: 50% 50%;"
-																	 data-exthumbnail="assets/img/hrs/hrs7.jpg"></a></div>
-															</div>
-														</div>
-														<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"></button><button type="button"
-															 role="presentation" class="owl-next"></button></div>
-														<div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button"
-															 class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
-													</div>
-													<!-- End content carousel -->
 
 													<p>Purus pede eget neque eget a. Eget mauris justo vehicula et metus nec primis tincidunt. Sollicitudin
 														mattis felis cursus magna mauris mus praesent nisl enim aenean fusce vehicula libero mauris vestibulum
@@ -299,6 +286,34 @@
 														<iframe data-src="https://www.youtube.com/embed/eQKpaf5P228?feature=oembed" allowfullscreen="" src="https://www.youtube.com/embed/eQKpaf5P228?feature=oembed"></iframe>
 													</div>
 													<!-- End Vimeo embed video -->
+
+													<!-- Begin sidebar widget -->
+													<div class="sidebar-widget sidebar-post-list">
+														<h3 class="sidebar-heading">Kontaktinfo</h3>
+														<ul class="list-unstyled">
+															<li>
+																<div class="post-data">
+																	<h5 class="post-title"><a href="blog-single.html">&emsp; Tel.nummer:070-2187235.</a></h5>
+																</div>
+															</li>
+															<li>
+																<div class="post-data">
+																	<h5 class="post-title"><a href="blog-single.html">&emsp; Address:Storgatan 12.</a></h5>
+																</div>
+															</li>
+															<li>
+																<div class="post-data">
+																	<h5 class="post-title"><a href="blog-single.html">&emsp; postnummer:54217</a></h5>
+																</div>
+															</li>
+															<li>
+																<div class="post-data">
+																	<h5 class="post-title"><a href="blog-single.html">&emsp; E-post:Erik.johan@gmail.com.</a></h5>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<!-- End sidebar widget -->
 
 												</div>
 											</div>
@@ -346,38 +361,6 @@
 											<li>
 												<div class="post-data">
 													<h5 class="post-title"><a href="blog-single.html">&emsp; Ägare: Sofie Ahlstrand.</a></h5>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<!-- End sidebar widget -->
-
-								</div> <!-- /.col -->
-
-								<div class="col-md-12 col-sm-6">
-
-									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-post-list">
-										<h3 class="sidebar-heading">Fakta</h3>
-										<ul class="list-unstyled">
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Baloubet du Rouet.</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Godkänd i Brandenburg, Finland.</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Språngavgift: SEK 1.600,–(+ 7% moms.)</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Ston som kommer till PS Flyinge är garanterade.</a></h5>
 												</div>
 											</li>
 										</ul>
@@ -442,26 +425,26 @@
 
 									<!-- Begin sidebar widget -->
 									<div class="sidebar-widget sidebar-post-list">
-										<h3 class="sidebar-heading">Kontaktinfo</h3>
+										<h3 class="sidebar-heading">Fakta</h3>
 										<ul class="list-unstyled">
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Tel.nummer:070-2187235.</a></h5>
+													<h5 class="post-title"><a href="blog-single.html">&emsp; Baloubet du Rouet.</a></h5>
 												</div>
 											</li>
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Address:Storgatan 12.</a></h5>
+													<h5 class="post-title"><a href="blog-single.html">&emsp; Godkänd i Brandenburg, Finland.</a></h5>
 												</div>
 											</li>
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; postnummer:54217</a></h5>
+													<h5 class="post-title"><a href="blog-single.html">&emsp; Språngavgift: SEK 1.600,–(+ 7% moms.)</a></h5>
 												</div>
 											</li>
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; E-post:Erik.johan@gmail.com.</a></h5>
+													<h5 class="post-title"><a href="blog-single.html">&emsp; Ston som kommer till PS Flyinge är garanterade.</a></h5>
 												</div>
 											</li>
 										</ul>
@@ -471,11 +454,11 @@
 								</div> <!-- /.col -->								
 
 								<div class="col-md-12 col-sm-6">
-
 									<!-- Begin sidebar widget -->
 									<div class="sidebar-widget sidebar-subscribe">
 										<h3 class="sidebar-heading">prenumerera</h3>
-										<p class="small text-gray">Prenumerera och håll dig uppdaterad om de senaste nyheterna! Oroa dig inte, vi skickar inte spam.</p>
+										<p class="small text-gray">Prenumerera och håll dig uppdaterad om de senaste nyheterna! Oroa dig inte, vi
+											skickar inte spam.</p>
 										<!-- Begin subscribe form -->
 										<form id="sidebar-subscribe-form">
 											<div class="form-group no-margin">
@@ -487,7 +470,7 @@
 										<!-- End subscribe form -->
 									</div>
 									<!-- End sidebar widget -->
-								</div> <!-- /.col -->								
+								</div> <!-- /.col -->
 							</div> <!-- /.row -->
 						</div>
 						<!-- End sidebar -->

@@ -8609,7 +8609,7 @@ body.header-transparent-on #page-header.ph-xlg .page-header-inner {
 }
 .youtube-bg-wrap.ytp-full .youtube-bg {
 	padding-bottom: 0 !important;
-	height: auto !important;
+	height: 322px !important; /* change the width of youtube video*/
 }
 
 
