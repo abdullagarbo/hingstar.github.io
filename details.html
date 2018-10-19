@@ -204,22 +204,26 @@
 
 											<script>
 												var slideIndex = 1;
-												  showDivs(slideIndex);
-												  
-												  function plusDivs(n) {
+												showDivs(slideIndex);
+
+												function plusDivs(n) {
 													showDivs(slideIndex += n);
-												  }
-												  
-												  function showDivs(n) {
+												}
+
+												function showDivs(n) {
 													var i;
 													var x = document.getElementsByClassName("mySlides");
-													if (n > x.length) {slideIndex = 1}    
-													if (n < 1) {slideIndex = x.length}
-													for (i = 0; i < x.length; i++) {
-													   x[i].style.display = "none";  
+													if (n > x.length) {
+														slideIndex = 1
 													}
-													x[slideIndex-1].style.display = "block";  
-												  }
+													if (n < 1) {
+														slideIndex = x.length
+													}
+													for (i = 0; i < x.length; i++) {
+														x[i].style.display = "none";
+													}
+													x[slideIndex - 1].style.display = "block";
+												}
 											</script>
 											<!-- End Blog list item image slider -->
 
@@ -282,8 +286,14 @@
 													<br>
 
 													<!-- Begin Vimeo embed video -->
-													<div class="embed-responsive embed-responsive-16by9">
-														<iframe data-src="https://www.youtube.com/embed/eQKpaf5P228?feature=oembed" allowfullscreen="" src="https://www.youtube.com/embed/eQKpaf5P228?feature=oembed"></iframe>
+													<div style="display:none;" class="html5gallery" data-skin="horizontal" data-width="480" data-height="272">
+														<!-- Add Youtube video to Gallery -->
+														<a href="https://www.youtube.com/watch?v=Zb-zpJWKuUA"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg"
+															 alt="Youtube Video">
+														</a>
+														<a href="https://www.youtube.com/watch?v=Zb-zpJWKuUA"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg"
+															alt="Youtube Video">
+													   </a>
 													</div>
 													<!-- End Vimeo embed video -->
 
@@ -293,22 +303,11 @@
 														<ul class="list-unstyled">
 															<li>
 																<div class="post-data">
-																	<h5 class="post-title"><a href="blog-single.html">&emsp; Tel.nummer:070-2187235.</a></h5>
-																</div>
-															</li>
-															<li>
-																<div class="post-data">
-																	<h5 class="post-title"><a href="blog-single.html">&emsp; Address:Storgatan 12.</a></h5>
-																</div>
-															</li>
-															<li>
-																<div class="post-data">
-																	<h5 class="post-title"><a href="blog-single.html">&emsp; postnummer:54217</a></h5>
-																</div>
-															</li>
-															<li>
-																<div class="post-data">
-																	<h5 class="post-title"><a href="blog-single.html">&emsp; E-post:Erik.johan@gmail.com.</a></h5>
+																	<h5 class="post-title"><span>&emsp; Namn: Erik Larsson</span></h5>
+																	<h5 class="post-title"><span>&emsp; Tel: (+46) 060254712</span></h5>
+																	<h5 class="post-title"><span>&emsp; E-post:Erik.johan@gmail.com</span></h5>
+																	<h5 class="post-title"><span>&emsp; Land: USA</span></h5>
+																	<h5 class="post-title"><a href="#0">&emsp; Websida: <u>www.ejohan.com</u></a></h5>
 																</div>
 															</li>
 														</ul>
@@ -345,22 +344,16 @@
 										<ul class="list-unstyled">
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Född: May 26, 1991</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Rekord: 1:51,4 , David Larsson.</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Intjänat: USD 1 292 433</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Ägare: Sofie Ahlstrand.</a></h5>
+													<h5 class="post-title"><span>&emsp; Född: May 26, 1991</span></h5>
+													<h5 class="post-title"><span>&emsp; Ras: Abstang</span></h5>
+													<h5 class="post-title"><span>&emsp; Färg: Brun</span></h5>
+													<h5 class="post-title"><span>&emsp; Mankhöjd: 80cm</span></h5>
+													<h5 class="post-title"><span>&emsp; Område: Hoppning</span></h5>
+													<h5 class="post-title"><span>&emsp; Kategori: A</span></h5>
+													<h5 class="post-title"><span>&emsp; Tävlingsmeriter: X</span></h5>
+													<h5 class="post-title"><span>&emsp; Betäckningsbevis: Ja</span></h5>
+													<h5 class="post-title"><span>&emsp; Stambok: Ja</span></h5>
+													<h5 class="post-title"><a href="#0" style="font-style: unset">&emsp; Statistik: <u>öppna</u></a></h5>
 												</div>
 											</li>
 										</ul>
@@ -425,52 +418,22 @@
 
 									<!-- Begin sidebar widget -->
 									<div class="sidebar-widget sidebar-post-list">
-										<h3 class="sidebar-heading">Fakta</h3>
+										<h3 class="sidebar-heading">Tillgänglighet</h3>
 										<ul class="list-unstyled">
 											<li>
 												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Baloubet du Rouet.</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Godkänd i Brandenburg, Finland.</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Språngavgift: SEK 1.600,–(+ 7% moms.)</a></h5>
-												</div>
-											</li>
-											<li>
-												<div class="post-data">
-													<h5 class="post-title"><a href="blog-single.html">&emsp; Ston som kommer till PS Flyinge är garanterade.</a></h5>
+													<h5 class="post-title"><span>&emsp; Seminavgift: SEK 1.600,–(+ 7% moms.)</span></h5>
+													<h5 class="post-title"><span>&emsp; Godkänd för avel i följande länder: EU, USA</span></h5>
+													<h5 class="post-title"><span>&emsp; Semin: Färsk</span></h5>
 												</div>
 											</li>
 										</ul>
 									</div>
 									<!-- End sidebar widget -->
 
-								</div> <!-- /.col -->								
-
-								<div class="col-md-12 col-sm-6">
-									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-subscribe">
-										<h3 class="sidebar-heading">prenumerera</h3>
-										<p class="small text-gray">Prenumerera och håll dig uppdaterad om de senaste nyheterna! Oroa dig inte, vi
-											skickar inte spam.</p>
-										<!-- Begin subscribe form -->
-										<form id="sidebar-subscribe-form">
-											<div class="form-group no-margin">
-												<input type="email" class="form-control" id="sidebar-subscribe" name="subscribe" placeholder="Skriv ditt E-post address..."
-												 required="">
-												<button type="submit" class="btn btn-primary btn-block btn-lg">prenumerera</button>
-											</div>
-										</form>
-										<!-- End subscribe form -->
-									</div>
-									<!-- End sidebar widget -->
 								</div> <!-- /.col -->
+
+
 							</div> <!-- /.row -->
 						</div>
 						<!-- End sidebar -->
@@ -510,10 +473,9 @@
 
 	<!-- Theme master JS -->
 	<script src="assets/js/theme.js"></script>
-
-	<!-- FOR DEMO SITE ONLY! JS -->
-	<script src="assets/demo-panel/js/demo-panel.js"></script>
-	<script src="assets/demo-panel/js/styleswitch.js"></script>
+	
+	<!-- FOR VIDEO SLIDER! JS -->
+	<script type="text/javascript" src="assets/js/html5gallery.js"></script>
 
 </body>
 
