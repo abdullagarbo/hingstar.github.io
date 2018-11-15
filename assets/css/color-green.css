@@ -1,0 +1,59 @@
+/* Find do color css */
+
+.intro .dropdown li.current {
+  background-color: #86b1f7;
+}
+
+.form-group>button {
+  background: #86b1f7;
+}
+
+.dropzone {
+  border: 3px solid #86b1f7;
+}
+
+.dropzone:hover {
+  border: 5px solid #86b1f7;
+}
+
+.dropzone.profile-picture .dz-default.dz-message {
+  background-color: #86b1f7;
+}
+
+.profile-list li a:hover,
+.profile-list li.active a {
+  background: #86b1f7;
+}
+
+
+.cont_package {
+  background: #86b1f7;
+}
+
+.listing-title-area label span {
+  color: #86b1f7;
+}
+
+ul.packg-detail li .fa {
+  color: #86b1f7;
+}
+
+.listing-title-area .form-group p a {
+  color: #86b1f7;
+}
+
+.form-group>button:hover,
+#recent-listing .owl-prev:hover,
+#recent-listing .owl-next:hover,
+.call-to-action-btn>a:last-child:hover,
+.call-to-action-btn>a:first-child:hover {
+  background: #00463e;
+}
+
+@media (max-width: 767px) {
+
+  .top_links li a:hover,
+  .top_right_links2 .add-listing>a:hover {
+    color: #86b1f7;
+  }
+}
