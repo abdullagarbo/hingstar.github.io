@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     'use strict';
 
     /*--
@@ -6,8 +6,8 @@
     -----------------------------------*/
     var header = $('.transparent-bar');
     var win = $(window);
-    
-    win.on('scroll', function() {
+
+    win.on('scroll', function () {
         var scroll = win.scrollTop();
         if (scroll < 200) {
             header.removeClass('stick');
@@ -15,14 +15,14 @@
             header.addClass('stick');
         }
     });
-    
-    
+
+
     /* isotop active */
     var $grid = $('.grid');
     var $gridItems = '.grid-item';
     // filter items on button click
-    $grid.imagesLoaded(function() {
-        $('.portfolio-menu-active').on('click', 'button', function() {
+    $grid.imagesLoaded(function () {
+        $('.portfolio-menu-active').on('click', 'button', function () {
             $(this).siblings('.active').removeClass('active');
             $(this).addClass('active');
             var filterValue = $(this).attr('data-filter');
@@ -30,7 +30,7 @@
                 filter: filterValue
             });
         });
-        
+
         // init Isotope
         $grid.isotope({
             itemSelector: $gridItems,
@@ -41,39 +41,39 @@
             }
         });
     });
-    
-    
+
+
     /* jQuery MeanMenu */
     $('#mobile-menu-active').meanmenu({
         meanScreenWidth: "991",
         meanMenuContainer: ".mobile-menu-area .mobile-menu",
     });
-    
+
     /*------ Wow Active ----*/
     new WOW().init();
-    
-    
+
+
     /* magnificPopup video popup */
     $('.video-popup').magnificPopup({
         type: 'iframe'
     });
-    
-    
+
+
     /*--
     menu-toggle
     ------------------------*/
-    $('.menu-toggle').on('click', function() {
+    $('.menu-toggle').on('click', function () {
         if ($('.menu-toggle').hasClass('is-active')) {
             $('.main-menu nav').removeClass('menu-open');
         } else {
             $('.main-menu nav').addClass('menu-open');
         }
     });
-    
+
     /*--
 	Hamburger js
     -----------------------------------*/
-    var forEach = function(t, o, r) {
+    var forEach = function (t, o, r) {
         if ("[object Object]" === Object.prototype.toString.call(t))
             for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
         else
@@ -81,14 +81,14 @@
     };
     var hamburgers = document.querySelectorAll(".hamburger");
     if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-            hamburger.addEventListener("click", function() {
+        forEach(hamburgers, function (hamburger) {
+            hamburger.addEventListener("click", function () {
                 this.classList.toggle("is-active");
             }, false);
         });
     }
-    
-    
+
+
     /*----------------------------
         ripples-active
         ------------------------------ */
@@ -97,8 +97,8 @@
         dropRadius: 15,
         perturbance: 0.02,
     });
-    
-    
+
+
     /* Best selling active */
     $('.testimonial-active').owlCarousel({
         loop: true,
@@ -126,8 +126,8 @@
             }
         }
     })
-    
-    
+
+
     /* Brand logo active */
     $('.brand-logo-active').owlCarousel({
         loop: true,
@@ -157,8 +157,8 @@
             }
         }
     })
-    
-    
+
+
     /* Slider active */
     $('.slider-active').owlCarousel({
         loop: true,
@@ -181,8 +181,8 @@
             }
         }
     })
-    
-    
+
+
     /*--
     Magnific Popup
     ------------------------*/
@@ -192,8 +192,8 @@
             enabled: true
         }
     });
-    
-    
+
+
     /*--------------------------
         ScrollUp
     ---------------------------- */
