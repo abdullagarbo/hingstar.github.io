@@ -1,230 +1,465 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hingstar - HorseMetro</title>
-    <meta name="description" content="">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <!-- all css here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
-    
-    <!-- Template image slider CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+	<title>Hingstar - HorseMetro</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arimo|PT+Serif" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+	<link href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive-calendar.css" rel="stylesheet" type="text/css">
+	<link href="css/chosen.css" rel="stylesheet" type="text/css">
+	<link href="jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+	<link href="css/colorpicker.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+	<!-- Preloader -->
+	<script src="js/jquery.queryloader2.min.js"></script>
 </head>
 
-<body>
-    <!-- Header Start -->
-    <header class="header-area transparent-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-5 col-sm-4">
-                    <div class="logo mt-15">
-                        <div class="section-title text-center mb-20">
-                            <h2>Hing<span>star</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-8 col-7 col-sm-8">
-                    <div class="menu-search-bundle">
-                        <div class="main-menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="skapa-annons.html">Skapa annons</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+<body class="sticky-header-on tablet-sticky-header">
+	<div class="container">
+		<section id="content">
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
 
-            </div>
-        </div>
-    </header>
+				<div class="row">
 
-    <!-- Slider Start -->
-    <div class="breadcrumb-area">
-        <div class="bg-img ptb-100 slider-overly d-flex align-items-center" style="background-image: url(assets/img/slider/6.jpg);">
-            <div class="container">
-                <div class="breadcrumb-text text-left">
-                    <h2>IRONMAN 1315</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="portfolio-details ptb-100">
-        <div class="container">
-            <div class="single-project-dec">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="portfolio-img">
+					<div class="col-lg-9 col-md-9 col-sm-8">
 
-                            <!-- list item image slider -->
-                            <div class="w3-content w3-display-container">
-                                <img class="mySlides" src="assets/img/slider/hrs5.jpg" style="width:100%">
-                                <img class="mySlides" src="assets/img/slider/hrs2.jpg" style="width:100%">
-                                <img class="mySlides" src="assets/img/slider/hrs3.jpg" style="width:100%">
-                                <img class="mySlides" src="assets/img/slider/hrs4.jpg" style="width:100%">
+						<!-- Single Blog Post -->
+						<div class="blog-post-single">
 
-                                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                            </div>
+							<!-- Portfolio Slideshow -->
+							<div class="portfolio-slideshow flexslider animate-onscroll">
 
-                            <script>
-                                var slideIndex = 1;
-                                showDivs(slideIndex);
+								<ul class="slides">
 
-                                function plusDivs(n) {
-                                    showDivs(slideIndex += n);
-                                }
+									<li><img src="img/blog/h1.jpg" alt=""></li>
+									<li><img src="img/blog/h2.jpg" alt=""></li>
+									<li><img src="img/blog/h3.jpg" alt=""></li>
+								</ul>
 
-                                function showDivs(n) {
-                                    var i;
-                                    var x = document.getElementsByClassName("mySlides");
-                                    if (n > x.length) {
-                                        slideIndex = 1
-                                    }
-                                    if (n < 1) {
-                                        slideIndex = x.length
-                                    }
-                                    for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                    }
-                                    x[slideIndex - 1].style.display = "block";
-                                }
-                            </script>
+							</div>
+							<!-- /Portfolio Slideshow -->
 
-                            <blockquote>Non mauris nullam. Wisi gravida quis quisque mattis dolor. Etiam sociis turpis
-                                nesciunt sed
-                                lacus sed hendrerit diam. Accumsan varius venenatis arcu maecenas nulla. Aliquet tempus
-                                lobortis. Tortor
-                                nibh erat vel gravida est accumsan ut ad. Orci malesuada morbi. Luctus pharetra lectus.</blockquote>
-                            <img src="assets/img/slider/hrs2.jpg" alt="" /><br><br>
+							<div class="post-meta animate-onscroll">
+								<span>by <a href="#0">Alex Landsrtöm</a></span>
+								<span>October 01, 2013 11:28AM</span>
+							</div>
 
-                            <h3>Blockquote</h3>
+							<div class="post-content">
 
-                            <blockquote>Non mauris nullam. Wisi gravida quis quisque mattis dolor. Etiam sociis turpis
-                                nesciunt sed
-                                lacus sed hendrerit diam. Accumsan varius venenatis arcu maecenas nulla. Aliquet tempus
-                                lobortis. Tortor
-                                nibh erat vel gravida est accumsan ut ad. Orci malesuada morbi. Luctus pharetra lectus.</blockquote>
+								<p class="animate-onscroll">Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor
+									pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem
+									ipsum dolor sit amet, consectetuer adipisMauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing
+									aliquet. </p>
 
-                            <h3 class="sidebar-heading">Kontaktinfo</h3>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <div class="post-data">
-                                        <h5 class="post-title"><span>  Namn: Erik Larsson</span></h5>
-                                        <h5 class="post-title"><span>  Tel: (+46) 060254712</span></h5>
-                                        <h5 class="post-title"><span>  E-post:Erik.johan@gmail.com</span></h5>
-                                        <h5 class="post-title"><span>  Land: USA</span></h5>
-                                        <h5 class="post-title"><a href="#0">  Websida: <u>www.ejohan.com</u></a></h5>
-                                    </div>
-                                </li>
-                            </ul>
+								<blockquote class="align-right animate-onscroll" style="width:45%">"Quisque diam lorem, interdum vitae, dapibus
+									ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor
+									pulvinar."</blockquote>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="project-desc">
-                            <h3>IRONMAN H 1351</h3>
-                            <div class="portfolio-meta mt-35">
-                                <ul>
-                                    <div class="row">
-                                    <div class="col-md-6">
-                                            <li><span>Född :</span> May 26, 1991<span></li>
-                                            <li><span>Ras :</span> Abstang<span></li>
-                                            <li><span>Färg :</span> Brun<span></li>
-                                            <li><span>Mankhöjd :</span> 80cm<span></li>
-                                            <li><span>Område :</span> Hoppning<span></li>
-                                    </div>
-                                    <div class="col-md-6">
-                                            <li><span>Kategori :</span> A</li>
-                                            <li><span>Tävlingsmeriter :</span> X</li>
-                                            <li><span>Betäckningsbevis :</span> Ja</li>
-                                            <li><span>Stambok :</span> Ja</li>
-                                            <li><span>Statistik :</span><a href="#0"> <u>Öppna</u></a></li>
-                                    </div>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="portfolio-meta mt-35">
-                            <ul>
-                                <li><span>Tillgänglighet:</span></li>
-                                <li><span>&emsp; Seminavgift: </span>SEK 1.600,–(+ 7% moms.)</li>
-                                <li><span>&emsp; Godkänd för följande länder: </span> EU, USA</li>
-                                <li><span>&emsp; Semin: </span>Färsk</li>
-                            </ul>
-                        </div>
-                        <div class="portfolio-meta mt-35">
-                            <table class="table table-bordered table-pedigree">
-                                <tbody>
-                                    <tr>
-                                        <td class="f" rowspan="4">Baloubet du Rouet (SF)</td>
 
-                                        <td class="ff" rowspan="2">Galoubet A (SF)</td>
+								<p class="animate-onscroll">Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget
+									tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est.
+									Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis.
+									Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.</p>
 
-                                        <td class="fff">Alme Z</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ffm">Viti (fr. trav.)</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fm" rowspan="2">Mesange du Rouet (SF)</td>
+								<p class="animate-onscroll">Vestibulum sed ante. Donec sagittis euismod purus.Sed ut perspiciatis sit
+									voluptatem accusantium doloremque laudantium, totam rem aperiam,eaque ipsa quae ab illo inventore veritatis et
+									quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+									aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
 
-                                        <td class="fmf">Starter (SF)</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fmm">Badine (SF)</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="m" rowspan="4">Georgia</td>
+							</div>
+						</div>
+						<!-- /Single advert Post -->
 
-                                        <td class="mf" rowspan="2">Continue </td>
 
-                                        <td class="mff">Contender</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="mfm">Felici</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="mm" rowspan="2">Georgette II</td>
+						<hr>
+						<!-- horse info--------->
 
-                                        <td class="mmf">Domino</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="mmm">Georgette</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+						<!-- Accordions -->
+						<ul class="accordions">
 
-                        <!-- Video slider Start -->
-                        <div class="about-img">
-                            <img alt="" src="assets/img/banner/about.jpg">
-                            <a class="video-btn video-popup" href="https://www.youtube.com/watch?v=Rp19QD2XIGM">
-                                <span></span>
-                            </a>
-                        </div>
+							<!-- Accordion -->
+							<li class="accordion">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+								<div class="accordion-header">
+									<div class="accordion-icon"></div>
+									<h6>Om hästen</h6>
 
-    <!-- all js here -->
-    <script src="assets/js/jquery-1.12.0.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-    
+								</div>
+
+								<div class="accordion-content" style="display: none;">
+									<table class="project-details">
+
+										<tbody>
+											<tr>
+												<td>Född:</td>
+												<td style="color: red">1999</td>
+												<td>Ras:</td>
+												<td style="color: red">Abstang</td>
+												<td>Färg:</td>
+												<td style="color: red">Brun</td>
+												<td>Mankhöjd:</td>
+												<td style="color: red">80cm</td>
+											</tr>
+
+											<tr>
+												<td>Område:</td>
+												<td style="color: red">Hoppning</td>
+												<td>Kategori:</td>
+												<td style="color: red">A</td>
+												<td>Tävlingsmeriter:</td>
+												<td style="color: red">X</td>
+												<td>Betäckningsbevis:</td>
+												<td style="color: red">Ja</td>
+											</tr>
+
+											<tr>
+												<td>Stambok:</td>
+												<td style="color: red">Ja</td>
+												<td>Statistik:</td>
+												<td style="color: red"><a href="#=">Öppna</a></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</li>
+							<!-- /Accordion -->
+
+							<!-- Accordion -->
+							<li class="accordion">
+
+								<div class="accordion-header">
+									<div class="accordion-icon"></div>
+									<h6>Tillgänglighet</h6>
+
+								</div>
+
+								<div class="accordion-content" style="display: none;">
+									<table class="project-details">
+
+										<tbody>
+											<tr>
+												<td>Seminavgift:</td>
+												<td style="color: red">SEK 1.600,–(+ 7% moms.)</td>
+												<td>Godkänd för följande länder:</td>
+												<td style="color: red">EU, USA</td>
+												<td>Semin:</td>
+												<td style="color: red">Färsk</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</li>
+							<!-- /Accordion -->
+
+							<!-- Accordion -->
+							<li class="accordion">
+
+								<div class="accordion-header">
+									<div class="accordion-icon"></div>
+									<h6>Stambok</h6>
+
+								</div>
+
+								<div class="accordion-content" style="display: none;">
+									<table class="table table-bordered table-pedigree">
+										<tbody>
+											<tr>
+												<td class="f" rowspan="4">Baloubet du Rouet (SF)</td>
+
+												<td class="ff" rowspan="2">Galoubet A (SF)</td>
+
+												<td class="fff">Alme Z</td>
+											</tr>
+											<tr>
+												<td class="ffm">Viti (fr. trav.)</td>
+											</tr>
+											<tr>
+												<td class="fm" rowspan="2">Mesange du Rouet (SF)</td>
+
+												<td class="fmf">Starter (SF)</td>
+											</tr>
+											<tr>
+												<td class="fmm">Badine (SF)</td>
+											</tr>
+											<tr>
+												<td class="m" rowspan="4">Georgia</td>
+
+												<td class="mf" rowspan="2">Continue </td>
+
+												<td class="mff">Contender</td>
+											</tr>
+											<tr>
+												<td class="mfm">Felici</td>
+											</tr>
+											<tr>
+												<td class="mm" rowspan="2">Georgette II</td>
+
+												<td class="mmf">Domino</td>
+											</tr>
+											<tr>
+												<td class="mmm">Georgette</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</li>
+							<!-- /Accordion -->
+
+							<!-- Accordion -->
+							<li class="accordion">
+
+								<div class="accordion-header">
+									<div class="accordion-icon"></div>
+									<h6>Mer Info</h6>
+
+								</div>
+
+								<div class="accordion-content" style="display: none;">
+									<p>Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin.
+										<br><br>
+										Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.</p>
+								</div>
+
+							</li>
+							<!-- /Accordion -->
+
+						</ul>
+
+						<!-- / horse info--------->
+
+
+
+						<!-- advert Author -->
+						<div class="post-author animate-onscroll">
+
+							<h4>Kontakt Info</h4>
+
+							<div class="author-info">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="author-img">
+											<img src="img/testimonials/profile9.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="author-description">
+											<p>Namn: Alex landström</p>
+											<p>Tel: (+46) 060254712</p>
+											<p>E-post: Erik.johan@gmail.com</p>
+											<p>Land: USA</p>
+											<p>Websida: www.ejohan.com</p>
+										</div>
+									</div>
+									<div class="social-media" style="opacity: 1;">
+										<span class="small-caption">Dela annonsen på:</span>
+										<ul class="social-icons">
+											<li class="facebook"><a href="#" class="tooltip-ontop" title="" data-original-title="Facebook"><i class="icons icon-facebook"></i></a></li>
+											<li class="twitter"><a href="#" class="tooltip-ontop" title="" data-original-title="Twitter"><i class="icons icon-twitter"></i></a></li>
+											<li class="google"><a href="#" class="tooltip-ontop" title="" data-original-title="Google Plus"><i class="icons icon-gplus"></i></a></li>
+											<li class="youtube"><a href="#" class="tooltip-ontop" title="" data-original-title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
+											<li class="flickr"><a href="#" class="tooltip-ontop" title="" data-original-title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
+											<li class="email"><a href="#" class="tooltip-ontop" title="" data-original-title="Email"><i class="icons icon-mail"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /advert Author -->
+
+						<!-- Related advert -->
+						<div class="related-articles">
+
+							<h3 class="animate-onscroll">Liknande annonser</h3>
+
+							<div class="row">
+
+								<div class="col-lg-4 col-md-4 col-sm-4">
+
+									<!-- advert Post -->
+									<div class="blog-post animate-onscroll">
+
+										<div class="post-image">
+											<img src="img/blog/h2.jpg" alt="">
+										</div>
+
+										<h4 class="post-title"><a href="#">Donec porta diam eu massa</a></h4>
+
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+
+									</div>
+									<!-- /advert Post -->
+
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4">
+
+									<!-- advert Post -->
+									<div class="blog-post animate-onscroll">
+
+										<div class="post-image">
+											<img src="img/blog/h3.jpg" alt="">
+										</div>
+
+										<h4 class="post-title"><a href="#">Vestibulum iaculis </a></h4>
+
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+
+									</div>
+									<!-- /advert Post -->
+
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4">
+
+									<!-- advert Post -->
+									<div class="blog-post animate-onscroll">
+
+										<div class="post-image">
+											<img src="img/blog/h1.jpg" alt="">
+										</div>
+
+										<h4 class="post-title"><a href="#">Praesent justo dolor</a></h4>
+
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+
+									</div>
+									<!-- /advert Post -->
+
+								</div>
+
+							</div>
+
+						</div>
+						<!-- /Related adverts -->
+					</div>
+
+					<!-- Sidebar -->
+					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+
+
+						<!-- Featured Video -->
+						<div class="sidebar-box white featured-video animate-onscroll">
+							<h3>Häst Video</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/q41slaUOzCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							 allowfullscreen></iframe>
+
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/PmH8f5S7UIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							 allowfullscreen></iframe>
+
+							<a href="#" class="button transparent button-arrow">Visa mer</a>
+						</div>
+						<!-- /Featured Video -->
+
+						<!-- Flickr Photos -->
+						<div class="sidebar-box white flickr-photos animate-onscroll">
+							<h3>Häst Bilder</h3>
+							<img src="img/blog/h1.jpg" alt="">
+							<hr>
+							<img src="img/blog/h2.jpg" alt="">
+							</ul>
+						</div>
+						<!-- /Flickr Photos -->
+
+					</div>
+					<!-- /Sidebar -->
+				</div>
+			</section>
+			<!-- /Section -->
+		</section>
+		<!-- Back To Top -->
+		<a href="#" id="button-to-top"><i class="icons icon-up-dir"></i></a>
+	</div>
+	<!-- /Container -->
+
+	<!-- JavaScript -->
+
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- Modernizr -->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+
+	<!-- Sliders/Carousels -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+	<!-- Revolution Slider  -->
+	<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- Calendar -->
+	<script type="text/javascript" src="js/responsive-calendar.min.js"></script>
+
+	<!-- Raty -->
+	<script type="text/javascript" src="js/jquery.raty.min.js"></script>
+
+	<!-- Chosen -->
+	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+
+	<!-- jFlickrFeed -->
+	<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+
+	<!-- InstaFeed -->
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+	<!-- Twitter -->
+	<script type="text/javascript" src="php/twitter/jquery.tweet.js"></script>
+
+	<!-- MixItUp -->
+	<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+
+	<!-- JackBox -->
+	<script type="text/javascript" src="jackbox/js/jackbox-packed.min.js"></script>
+
+	<!-- CloudZoom -->
+	<script type="text/javascript" src="js/zoomsl-3.0.min.js"></script>
+
+	<!-- ColorPicker -->
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+
+	<!-- Main Script -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+
 </body>
 
 </html>
